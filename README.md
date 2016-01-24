@@ -1,5 +1,9 @@
 # Mac OS X 10.11 El Capitan Front-end Dev Setup
 
+This guide represents the different steps to configure my new Mac for front-end development.
+
+I install ZSH, utilities, command line tools and upgrade tools like git and php to have the latest versions.
+
 ## Clean install Mac OS El Capitain (10.11)
 
 * [El Capitan: Prepare the usb key](http://www.macplanete.com/tutoriels/16680/el-capitan-creer-usb-bootable-mac-os-x-10-11)
