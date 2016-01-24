@@ -133,6 +133,7 @@ Git is pre-installed on Mac OS X, but I want the latest version.
 ## Github
 
 * [Generating an SSH key](https://help.github.com/articles/generating-an-ssh-key/)
+* [Changing a remote's URL](https://help.github.com/articles/changing-a-remote-s-url/)
 
 ## SSH
 
