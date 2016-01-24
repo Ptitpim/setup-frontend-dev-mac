@@ -24,6 +24,18 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew tap caskroom/cask
 ```
 
+## Utilities
+
+You can use Brew Cask to install them if you prefer.
+
+* [iTerm 2](https://www.iterm2.com/)
+* [Sublime Text 3](http://www.sublimetext.com/3)
+* [Sublimte Text 3 Package Control](https://packagecontrol.io/installation)
+* [Spectacle](https://www.spectacleapp.com)
+* [Alfred](https://www.alfredapp.com)
+* [Dropbox](https://www.dropbox.com/fr)
+* [Google Drive](https://www.google.fr/intl/fr/drive/download/)
+
 ## ZSH (Prezto)
 
 1. Install [Prezto](https://github.com/sorin-ionescu/prezto)
@@ -53,4 +65,18 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'git' \
   'prompt'
+```
+5. Edit ~/.zshrc
+```bash
+nano ~.zshrc
+```
+6. Add Sublime text Alias
+```bash
+# Sublime Text Alias
+alias s='open -a "Sublime Text"'
+export EDITOR="s -n -w"
+```
+7. Now you can open file or folder with Sublime Text 3 from terminal
+```bash
+s ~.zshrc
 ```
