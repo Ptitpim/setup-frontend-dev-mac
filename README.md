@@ -134,3 +134,66 @@ brew cask install virtualbox
   ```bash
   sudo gem install sass
   ```
+
+## Sublime Text 3
+
+### Install Sublime Text 3 packages (cmd+shift+p)
+
+* Alignment
+* ApacheConf
+* Backbone.js
+* BracketHighlighter
+* Comment-Snippets
+* CSS Format
+* DocBlockr
+* Dotfiles Syntax Highlighting
+* Drupal
+* EditorConfig
+* Emmet
+* GitGutter
+* Handlebars
+* HTML5
+* Indent XML
+* JsFormat
+* LESS
+* Sass
+* SCSS
+* SideBarEnhancements
+* Theme - Spacegray
+* Underscorejs
+* Virtual Host Snippet
+
+### Configure Sublime Text 3 User settings
+
+```json
+{
+  "auto_complete_selector": "source - comment, meta.tag - punctuation.definition.tag.begin",
+  "auto_complete_triggers":
+  [
+    {
+      "characters": "ng-controller=\"*",
+      "selector": "punctuation.definition.string"
+    }
+  ],
+  "bold_folder_labels": true,
+  "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+  "draw_white_space": "all",
+  "fade_fold_buttons": false,
+  "font_size": 14.0,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "SublimeLinter",
+    "Vintage"
+  ],
+  "indent_guide_options":
+  [
+    "draw_normal",
+    "draw_active"
+  ],
+  "tab_size": 2,
+  "theme": "Spacegray Eighties.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "world_wrap": true
+}
+```
