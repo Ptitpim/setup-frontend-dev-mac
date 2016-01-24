@@ -205,6 +205,10 @@ brew cask install virtualbox
 ## PHP
 
 * [Upgrade PHP version to 5.6 or 7](http://coolestguidesontheplanet.com/upgrade-php-on-osx/)
+
+  ```bash
+  curl -s http://php-osx.liip.ch/install.sh | bash -s 5.6
+  ```
 * Update php command line version (php -v)
 
   Edit .zprofile file
