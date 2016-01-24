@@ -293,6 +293,7 @@ brew cask install virtualbox
 
 * [Get Apache, MySQL, PHP and phpMyAdmin working on OSX 10.11 El Capitan](http://coolestguidesontheplanet.com/get-apache-mysql-php-and-phpmyadmin-working-on-osx-10-11-el-capitan/)
 * Create logs alias:
+
   ```bash
   cd ~/Documents
   mkdir logs
