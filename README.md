@@ -89,3 +89,47 @@ You can use Brew Cask to install them if you prefer.
   ```bash
   s ~/.zshrc
   ```
+
+## Git (latest version) & Git-flow
+
+Git is pre-installed on Mac OS X, but I want the latest version.
+
+```bash
+brew install git git-flow
+```
+
+## Node.js
+
+```bash
+brew install node
+```
+
+## Vagrant
+
+```bash
+brew cask install vagrant
+brew cask install vagrant-manager
+brew cask install virtualbox
+```
+
+## Front-end command line tools
+
+* Bower, Gulp and Grunt-CLI
+
+  ```bash
+  npm install -g bower
+  npm install -g gulp
+  npm install -g grunt-cli
+  ```
+
+  List installed modules with
+
+  ```bash
+  npm list -g --depth=0
+  ```
+
+* SASS
+
+  ```bash
+  sudo gem install sass
+  ```
