@@ -17,7 +17,7 @@
 ## Homebrew
 
 1. Install [Homebrew](http://brew.sh)
-  
+
   ```bash
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   ```
@@ -33,7 +33,7 @@ You can use Brew Cask to install them if you prefer.
 
 * [iTerm 2](https://www.iterm2.com/)
 * [Sublime Text 3](http://www.sublimetext.com/3)
-* [Sublimte Text 3 Package Control](https://packagecontrol.io/installation)
+* [Sublime Text 3 Package Control](https://packagecontrol.io/installation)
 * [Spectacle](https://www.spectacleapp.com)
 * [Alfred](https://www.alfredapp.com)
 * [Dropbox](https://www.dropbox.com/fr)
