@@ -99,9 +99,95 @@ You can use Brew Cask to install them if you prefer.
 
 Git is pre-installed on Mac OS X, but I want the latest version.
 
+1. Install Git and Git-flow
+
+  ```bash
+  brew install git git-flow
+  ```
+2. Configure global name and email:
+
+  ```
+  git config --global user.name "Your Name Here"
+  git config --global user.email "your_email@youremail.com"
+  ```
+3. Configure .gitignore_global
+
+  ```
+  touch .gitignore_global
+  ```
+
+  Edit the file
+
+  ```
+  .DS_Store
+  .Trashes
+  .Spotlight_V100
+  ```
+
+  Add to gitconfig
+
+  ```
+  git config --global core.excludesfile ~/.gitignore_global
+  ```
+
+## Github
+
+* [Generating an SSH key](https://help.github.com/articles/generating-an-ssh-key/)
+
+## SSH
+
+When generating an SSH key, you'll need to [add your newly created (or existing) SSH key to the ssh-agent](https://help.github.com/articles/adding-a-new-ssh-key-to-the-ssh-agent/).
+
 ```bash
-brew install git git-flow
+ssh-add ~/.ssh/id_rsa
 ```
+
+or enable [SSH module](https://github.com/sorin-ionescu/prezto/tree/master/modules/ssh) for Prezto:
+
+* Edit `.zpreztorc` file and add `ssh` module
+
+  ```bash
+  # Set the Prezto modules to load (browse modules).
+  # The order matters.
+  zstyle ':prezto:load' pmodule \
+    'environment' \
+    'terminal' \
+    'editor' \
+    'history' \
+    'directory' \
+    'spectrum' \
+    'utility' \
+    'completion' \
+    'git' \
+    'ssh' \
+    'prompt'
+  ```
+
+* Add multiple entities
+
+  ```bash
+  zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_dsa' 'id_github'
+  ```
+
+By creating a [local configuration file for SSH](https://mediatemple.net/community/products/grid/204644730/using-an-ssh-config-file), you can create shortcuts for servers you frequently access, in addition to configuring more advanced options
+
+* Create config file:
+
+  ```bash
+  touch ~/.ssh/config
+  ```
+* Edit the file:
+  
+  ```bash
+  s ~/.ssh/config
+  ```
+* Add config:
+  
+  ```bash
+  Host dev
+    Hostname dv.example.com
+    IdentityFile ~/.ssh/mykey_rsa
+  ```
 
 ## Node.js
 
