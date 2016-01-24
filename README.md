@@ -68,7 +68,7 @@ zstyle ':prezto:load' pmodule \
 ```
 5. Edit ~/.zshrc
 ```bash
-nano ~.zshrc
+nano ~/.zshrc
 ```
 6. Add Sublime text Alias
 ```bash
@@ -78,5 +78,5 @@ export EDITOR="s -n -w"
 ```
 7. Now you can open file or folder with Sublime Text 3 from terminal
 ```bash
-s ~.zshrc
+s ~/.zshrc
 ```
