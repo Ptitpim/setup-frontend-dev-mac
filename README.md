@@ -197,3 +197,34 @@ brew cask install virtualbox
   "world_wrap": true
 }
 ```
+
+## Apache
+
+* [Get Apache, MySQL, PHP and phpMyAdmin working on OSX 10.11 El Capitan](http://coolestguidesontheplanet.com/get-apache-mysql-php-and-phpmyadmin-working-on-osx-10-11-el-capitan/)
+
+## PHP
+
+* [Upgrade PHP version to 5.6 or 7](http://coolestguidesontheplanet.com/upgrade-php-on-osx/)
+* Update php command line version (php -v)
+
+  Edit .zprofile file
+
+  ```bash
+  s ~/.zprofile
+  ```
+  Add path:
+
+  ```bash
+  # Set the list of directories that Zsh searches for programs.
+  path=(
+    /usr/local/{bin,sbin}
+    /usr/local/php5/bin
+    $path
+  )
+  ```
+
+## MySQL
+
+```bash
+brew install mysql
+```
