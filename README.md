@@ -13,6 +13,7 @@
   ```bash
   xcode-select --install
   ```
+3. Launch Xcode and agree license
 
 ## Homebrew
 
