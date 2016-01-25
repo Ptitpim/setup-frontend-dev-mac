@@ -170,6 +170,12 @@ or enable [SSH module](https://github.com/sorin-ionescu/prezto/tree/master/modul
   zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_dsa' 'id_github'
   ```
 
+* It seem it doesn't work, OS X ask password after reboot when I use git command. Instead I store the key in the keychain:
+
+  ```bash
+  ssh-add -K [path/to/private SSH key]
+  ```
+
 By creating a [local configuration file for SSH](https://mediatemple.net/community/products/grid/204644730/using-an-ssh-config-file), you can create shortcuts for servers you frequently access, in addition to configuring more advanced options
 
 * Create config file:
