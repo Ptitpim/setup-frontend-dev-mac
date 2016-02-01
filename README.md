@@ -310,6 +310,22 @@ brew cask install virtualbox
   ln -s /var/log/apache2/error_log error_log
   ```
 
+* Start the server
+
+  ```bash
+  sudo apachectl start
+  ```
+* Run the server
+
+  ```bash
+  sudo apachectl restart
+  ```
+* Stop the server
+  
+  ```bash
+  sudo apachectl stop
+  ```
+
 ## PHP
 
 * [Upgrade PHP version to 5.6 or 7](http://coolestguidesontheplanet.com/upgrade-php-on-osx/)
