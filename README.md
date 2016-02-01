@@ -310,20 +310,17 @@ brew cask install virtualbox
   ln -s /var/log/apache2/error_log error_log
   ```
 
-* Start the server
+* Start, stop, restart the server
 
   ```bash
+  # Start
   sudo apachectl start
-  ```
-* Run the server
 
-  ```bash
-  sudo apachectl restart
-  ```
-* Stop the server
-  
-  ```bash
+  # Stop
   sudo apachectl stop
+
+  # Restart
+  sudo apachectl restart
   ```
 
 ## PHP
@@ -353,6 +350,21 @@ brew cask install virtualbox
 
 ## MySQL
 
-```bash
-brew install mysql
-```
+* Install with Homebrew:
+
+  ```bash
+  brew install mysql
+  ```
+
+* Start, stop, restart the server
+
+  ```bash
+  # Start
+  mysql.server start
+
+  # Stop
+  mysql.server stop
+
+  # Restart
+  mysql.server restart
+  ```
