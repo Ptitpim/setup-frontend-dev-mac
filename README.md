@@ -82,9 +82,11 @@ You can use Brew Cask to install them if you prefer.
   ```bash
   nano ~/.zshrc
   ```
-6. Add Sublime text Alias
+6. Add  Alias
 
   ```bash
+  # bower
+  alias bower='noglob bower'
   # Sublime Text Alias
   alias s='open -a "Sublime Text"'
   export EDITOR="s -n -w"
