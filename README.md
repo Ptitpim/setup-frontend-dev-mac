@@ -370,3 +370,13 @@ brew cask install virtualbox
   # Restart
   mysql.server restart
   ```
+  
+* Fix the 2002 MySQL Socket error
+
+  Fix the looming 2002 socket error – which is linking where MySQL places the socket and where OSX thinks it should be, MySQL puts it in /tmp and OSX looks for it in /var/mysql the socket is a type of file that allows mysql client/server communication.
+
+  ```bash
+  sudo mkdir /var/mysql
+  
+  sudo ln -s /tmp/mysql.sock /var/mysql/mysql.sock
+  ```
