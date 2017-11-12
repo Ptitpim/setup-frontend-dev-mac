@@ -97,6 +97,16 @@ You can use Brew Cask to install them if you prefer.
   s ~/.zshrc
   ```
 
+8. Uninstall Prezto (if needed)
+
+  ```bash  
+  rm -rf ~/.zprezto ~/.zlogin ~/.zlogout ~/.zpreztorc ~/.zprofile ~/.zshenv ~/.zshrc
+  ```
+
+9. Updating Prezto
+
+Run ```zprezto-update``` to automatically check if there is an update to zprezto.
+
 ## Git (latest version) & Git-flow
 
 Git is pre-installed on Mac OS X, but I want the latest version.
