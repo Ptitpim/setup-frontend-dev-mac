@@ -4,9 +4,15 @@ This guide represents the different steps to configure my new Mac for front-end 
 
 ## Installation de macOS Catalina
 
-* Télécharger macOS.
-* [Création d’un programme d’installation amorçable pour macOS](https://support.apple.com/fr-fr/HT201372).
-* Insérer la clé USB et démarrer avec la touche `alt` enfoncée pour choisir le volume de démarrage.
+1. Télécharger macOS.
+2. [Créer une clé d'installation](https://support.apple.com/fr-fr/HT201372)
+ * Connecter une clé USB d'au moins 12Go au format macOS étendu.
+ * Ouvrir le terminal et entrer la commande suivante (pour Catalina) :
+ ```bash
+sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+ ```
+4. Suivre les instructions
+3. Insérer la clé USB et démarrer avec la touche `alt` enfoncée pour choisir le volume de démarrage
 
 ## Préparation initiale
 
@@ -53,7 +59,19 @@ This guide represents the different steps to configure my new Mac for front-end 
 
 ...
 
-### SSH
+## SSH
+
+...
+
+## node.js (via nvm)
+
+[Node Version Manager](https://github.com/nvm-sh/nvm) (nvm) permet de gérer plusieurs versions de node.js.
+
+L'installation avec Homebrew n'est pas supporté par nvm.
+
+...
+
+## Docker
 
 ...
 
