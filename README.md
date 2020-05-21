@@ -8,6 +8,7 @@ This guide represents the different steps to configure my new Mac for front-end 
 2. [Créer une clé d'installation](https://support.apple.com/fr-fr/HT201372)
  * Connecter une clé USB d'au moins 12Go au format macOS étendu.
  * Ouvrir le terminal et entrer la commande suivante (pour Catalina) :
+
  ```bash
 sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
  ```
@@ -39,7 +40,7 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 
 ## Xcode
 
-1. Télécharger Xcode depuis l'Appstore
+1. Télécharger [Xcode depuis l'Appstore](https://apps.apple.com/fr/app/xcode/id497799835?mt=12)
 2. Installer les outils en ligne de commande
   
   ```bash
@@ -48,6 +49,45 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 3. Lancer Xcode and accepter le contrat de licence
 
 ## ZSH/Prezto
+
+[Prezto](https://github.com/sorin-ionescu/prezto) is the configuration framework for Zsh; it enriches the command line interface environment with sane defaults, aliases, functions, auto completion, and prompt themes.
+
+### Installation
+
+1. Lancer Zsh :
+
+```bash
+zsh
+````
+
+2. Cloner le dépôt :
+
+```bash
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+```
+
+3. Créer une nouvelle configuration Zsh
+
+```bash
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+```
+
+4. Définir Zsh comme shell par défault
+
+```bash
+chsh -s /bin/zsh
+```
+
+5. Ouvrir Zsh dans un nouveau terminal
+
+### Mise à jour
+
+...
+
+### Usage
 
 ...
 
@@ -69,7 +109,41 @@ sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstall
 
 L'installation avec Homebrew n'est pas supporté par nvm.
 
-...
+### Installation
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+```
+
+Si en redémarrant le terminal il y a une erreur comme : `zsh compinit: insecure directories, run compaudit for list.`, exécuter la commande suivante :
+
+```bash
+compaudit | xargs chmod g-w
+```
+
+### Installation de node.js
+
+```bash
+nvm install node # "node" is an alias for the latest version
+```
+
+## Yarn
+
+Yarn is a package manager that doubles down as project manager. Whether you work on one-shot projects or large monorepos, as a hobbyist or an enterprise user, we've got you covered.
+
+### Installation
+
+```bash
+npm install -g yarn
+```
+
+Une fois l'installation terminée, vérifier la version :
+
+```bash
+yarn --version
+```
+
+La version devrait être quelquechose comme `1.22.4`. Il est possible de [paramétrer la version de Yarn dans chaque projet](https://yarnpkg.com/getting-started/install#per-project-install).
 
 ## Docker
 
